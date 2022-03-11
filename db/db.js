@@ -1,8 +1,8 @@
-let url =process.env.DATABASE;
-  // "mongodb+srv://waqas:waqas123@cluster0.b6gcf.mongodb.net/myblog?retryWrites=true&w=majority";
+let url =
+  "mongodb+srv://waqas:waqas123@cluster0.b6gcf.mongodb.net/myblog?retryWrites=true&w=majority";
 const mongoose = require("mongoose");
 
-const db = mongoose.connect(url, {
+const db = mongoose.connect("mongodb+srv://waqas:waqas123@cluster0.b6gcf.mongodb.net/myblog?retryWrites=true&w=majority", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
