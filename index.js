@@ -12,7 +12,7 @@ app.use(cors());
 require('./db/db');
 app.use("/", route);
 
-if(process.env.NODE_ENV==='production'){
+if(process.env.NODE_ENV=='production'){
   app.use(express.static('todo/build'));
 }
 
