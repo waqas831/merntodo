@@ -3,7 +3,7 @@ const mongoose=require('mongoose');
 const TodoModel=mongoose.Schema({
     data:{
         type:String,
-        require:true
+        // require:true
     }
 },{timestamp:true});
 
