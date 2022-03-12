@@ -6,7 +6,7 @@ const TakeInput = () => {
   const [value, setValue] = useState("");
   const [alldata, setAlldata] = useState([]);
   const taken=async()=>{
-    const data=await axios.get(`${process.env.PORT}/record`);
+    const data=await axios.get('http://localhost:8080/record');
     const arraydata=data.data.data;
     setAlldata(arraydata);
     console.log('array data',arraydata);
