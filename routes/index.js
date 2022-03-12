@@ -3,7 +3,7 @@ const router = express.Router();
 const TodoModel = require("../models/model");
 require("dotenv").config();
 
-router.get("/", async (req, res) => {
+router.get("/record", async (req, res) => {
   const alldata = await TodoModel.find({});
   if (alldata) {
     res.status(200).json({ msg: "data is given", data: alldata });
