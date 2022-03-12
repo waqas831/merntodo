@@ -15,12 +15,12 @@ const ModelsUpdate = () => {
   };
 
   const getdata = async () => {
-    const data = await axios.get(`http://localhost:8080/:${postid}`);
+    const data = await axios.get(`/:${postid}`);
     setValue(data.data.record.data);
   };
 
   const updateitem = async () => {
-    const data = await axios.put(`http://localhost:8080/edit/:${postid}`, {
+    const data = await axios.put(`/edit/:${postid}`, {
       data: value,
     });
     console.log("saaaaaaaaaaaaaaaaaaaaaaaa", data);

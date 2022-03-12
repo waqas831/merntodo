@@ -19,7 +19,7 @@ const TakeInput = () => {
   },[]); 
 
   const submit = async() => {
-    const data=await axios.post('http://localhost:8080/add',{data:value});
+    const data=await axios.post('/add',{data:value});
     const msg=data.data.msg;
     console.log(msg);
     setValue("");

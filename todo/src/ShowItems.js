@@ -12,7 +12,7 @@ const ShowItems = ({ setdata, taken, alldata, myvalue, setmyvalue }) => {
   const navigate=useNavigate();
  
   const deletefun = async (index) => {
-    const data = await axios.delete(`http://localhost:8080/del/${index}`);
+    const data = await axios.delete(`/del/${index}`);
     if(data.data.msg==="Success"){
       setdata(alldata.filter((item) => item._id !== index));
       setmyvalue(myvalue.filter((item) => item._id !== index));
