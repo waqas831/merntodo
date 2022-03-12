@@ -6,11 +6,11 @@
   "engines": {
     "node": ">=8.0.0",
     "npm": ">=8.3.1"
-  },
+  }, 
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start":"node index.js",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix && npm run build --prefix && npm run start"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix todo && npm run build --prefix todo"
   },
   "keywords": [],
   "author": "",
