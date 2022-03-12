@@ -10,6 +10,7 @@ const TakeInput = () => {
     const arraydata=data.data.data;
     setAlldata(arraydata);
     console.log('array data',arraydata);
+    console.log(value)
   }
 
 
