@@ -1,7 +1,7 @@
 // let url ="mongodb+srv://waqas:waqas123@cluster0.b6gcf.mongodb.net/myblog?retryWrites=true&w=majority";
 const mongoose = require("mongoose");
 
-const db = mongoose.connect(process.env.Database, {
+const db = mongoose.connect(process.env.DATABASE, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
