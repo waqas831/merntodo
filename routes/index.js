@@ -17,7 +17,6 @@ router.post("/add", async (req, res) => {
   const newAddData = await new TodoModel({
     data: todo,
   });
-
   const resmsg = await newAddData.save();
   if (resmsg) {
     res.status(200).json({ msg: "data addedd successfully", data: newAddData });
